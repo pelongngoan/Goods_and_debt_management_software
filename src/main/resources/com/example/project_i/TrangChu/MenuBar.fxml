@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane fx:id="menu_Pane" onKeyPressed="#setMenu_Pane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_i.TrangChu.MenuController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <BorderPane fx:id="mainPane" layoutX="222.0" layoutY="131.0" prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <MenuBar fx:id="menuBar" prefHeight="26.0" prefWidth="927.0">
+                    <menus>
+                      <Menu fx:id="quanLy_Menu" text="_B - Danh mục quản lý">
+                        <items>
+                          <MenuItem fx:id="quanLyHH_MenuItem" mnemonicParsing="false" onAction="#switchForm" text="Danh mục hàng hóa" />
+                              <MenuItem fx:id="quanLyKH_MenuItem" mnemonicParsing="false" onAction="#switchForm" text="Danh mục khách hàng" />
+                              <MenuItem mnemonicParsing="false" onAction="#switchForm" text="Nhà cung cấp" />
+                        </items>
+                      </Menu>
+                      <Menu fx:id="nhapXuat_Menu" text="_C - Quản lý chứng từ">
+                        <items>
+                          <MenuItem fx:id="nhapPX_MenuItem" mnemonicParsing="false" onAction="#switchForm" text="Nhập xuất phiếu xuất hàng" />
+                              <MenuItem fx:id="nhapHDBL_MenuItem" mnemonicParsing="false" onAction="#switchForm" text="Nhập xuất hóa đơn bán lẻ" />
+                              <MenuItem fx:id="nhapPN_MenuItem" mnemonicParsing="false" onAction="#switchForm" text="Nhập xuất phiếu nhập hàng" />
+                              <MenuItem fx:id="nhapPT_MenuItem" mnemonicParsing="false" onAction="#switchForm" text="Nhập xuất phiếu thu tiền" />
+                              <MenuItem fx:id="nhapPC_MenuItem" mnemonicParsing="false" onAction="#switchForm" text="Nhập xuất phiếu chi tiền" />
+                        </items>
+                      </Menu>
+                        <Menu text="Nhập xuất thẻ ">
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#switchForm" text="Thẻ kho" />
+                              <MenuItem mnemonicParsing="false" onAction="#switchForm" text="Thẻ công nợ" />
+                          </items>
+                        </Menu>
+                      <Menu fx:id="timKiem_Menu" text="_F - Tìm kiếm" />
+                    </menus>
+                  </MenuBar>
+               </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.project_i.Phieu_Nhap_Xuat.phieuXuat_Controller"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <AnchorPane fx:id="form_PhieuXuatKho" layoutX="8.0" layoutY="5.0" prefHeight="282.0" prefWidth="884.0">
+            <children>
+                <TextField layoutX="135.0" layoutY="165.0" />
+                <TextField layoutX="135.0" layoutY="241.0" />
+                <DatePicker layoutX="136.0" layoutY="97.0" />
+                <Button layoutX="321.0" layoutY="241.0" mnemonicParsing="false" text="Nhập" />
+                <Label layoutX="13.0" layoutY="169.0" text="Địa chỉ nhận hàng :" />
+                <Label layoutX="21.0" layoutY="101.0" text="Ngày phát sinh :" />
+                <Label layoutX="26.0" layoutY="245.0" text="Mã hàng hóa :" />
+                <Button layoutX="756.0" layoutY="31.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="113.0" text="Tạo phiếu xuất" />
+                <Label layoutX="154.0" layoutY="31.0" text="NHẬP PHIẾU XUẤT KHO">
+                    <font>
+                        <Font name="Times New Roman Bold" size="47.0" />
+                    </font>
+                </Label>
+                <TextField layoutX="135.0" layoutY="128.0" />
+                <Label layoutX="50.0" layoutY="132.0" text="Bên nhận :" />
+                <TextField layoutX="135.0" layoutY="202.0" />
+                <Label layoutX="50.0" layoutY="206.0" text="Diễn giải :" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="6.0" layoutY="286.0" prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <TableView prefHeight="174.0" prefWidth="887.0">
+                    <columns>
+                        <TableColumn prefWidth="56.80001735687256" text="STT" />
+                        <TableColumn prefWidth="227.20004272460938" text="Tên hàng" />
+                        <TableColumn minWidth="0.0" prefWidth="112.7999267578125" text="Đơn vị tính" />
+                        <TableColumn prefWidth="140.79998779296875" text="Số lượng" />
+                        <TableColumn prefWidth="170.4000244140625" text="Đơn giá" />
+                        <TableColumn prefWidth="193.60009765625" text="Thành tiền" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="4.0" layoutY="469.0" prefHeight="102.0" prefWidth="889.0">
+            <children>
+                <Label layoutX="689.0" layoutY="14.0" text="Tổng tiền :" />
+                <Button layoutX="553.0" layoutY="51.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="127.0" text="Lưu phiếu xuất" />
+                <Button layoutX="720.0" layoutY="51.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="103.0" text="In phiếu xuất" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

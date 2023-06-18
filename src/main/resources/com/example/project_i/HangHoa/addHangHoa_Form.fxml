@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="themSP_Form" onKeyPressed="#setThemSP_Form" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_i.HangHoa.HangHoa_add_Controller">
+   <children>
+      <Label layoutX="50.0" layoutY="45.0" text="Nhóm sản phẩm :" />
+      <Label cacheShape="false" centerShape="false" focusTraversable="false" layoutX="55.0" layoutY="84.0" text="Mã sản phẩm :" visible="false" />
+      <Label layoutX="50.0" layoutY="145.0" text="Tên sản phẩm :" />
+      <Label layoutX="50.0" layoutY="195.0" text="Đơn vị tính :" />
+      <Label layoutX="50.0" layoutY="245.0" text="Giá nhập :" />
+      <Label layoutX="50.0" layoutY="295.0" text="Giá buôn :" />
+      <Button fx:id="themMoi_Button" layoutX="30.0" layoutY="350.0" mnemonicParsing="false" onAction="#setThemMoi_Button" prefHeight="25.0" prefWidth="130.0" text="Thêm mới (F5)" />
+      <Button fx:id="thoat_Button" layoutX="410.0" layoutY="350.0" mnemonicParsing="false" onAction="#setThoat_Button" prefHeight="25.0" prefWidth="130.0" text="Thoát (F12)" />
+      <TextField fx:id="nhomHH_TexField" layoutX="150.0" layoutY="45.0" prefWidth="450.0" />
+      <TextField fx:id="maHH_TexField" layoutX="150.0" layoutY="95.0" />
+      <TextField fx:id="tenHH_TexField" layoutX="150.0" layoutY="145.0" prefWidth="500.0" />
+      <TextField fx:id="donViTinh_TexField" layoutX="150.0" layoutY="195.0" />
+      <TextField fx:id="giaNhap_TexField" layoutX="150.0" layoutY="245.0" />
+      <TextField fx:id="giaBanLe_TexField" layoutX="440.0" layoutY="245.0" />
+      <TextField fx:id="giaXuat_TexField" layoutX="150.0" layoutY="295.0" />
+      <TextField fx:id="tonKho_TexField" layoutX="440.0" layoutY="295.0" />
+      <Label alignment="BASELINE_CENTER" layoutY="14.0" prefWidth="700.0" text="THÊM SẢN PHẨM MỚI">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="ghi_Button" layoutX="180.0" layoutY="350.0" mnemonicParsing="false" onAction="#setGhi_Button" prefHeight="25.0" prefWidth="130.0" text="Ghi (F8)" />
+      <Label layoutX="50.0" layoutY="95.0" text="Mã sản phẩm :" />
+      <Label layoutX="350.0" layoutY="245.0" text="Giá bán lẻ :" />
+      <Label layoutX="350.0" layoutY="195.0" text="(Chiếc, Kg, ... )" />
+      <Line endX="700.0" layoutY="334.0" />
+      <Label layoutX="350.0" layoutY="295.0" text="Tồn định mức :" />
+   </children>
+</AnchorPane>

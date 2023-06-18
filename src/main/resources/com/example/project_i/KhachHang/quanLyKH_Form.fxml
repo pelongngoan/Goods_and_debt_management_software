@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_i.KhachHang.quanLyKH_Controller">
+    <children>
+        <AnchorPane layoutX="5.0" layoutY="324.0" prefHeight="200.0" prefWidth="888.0">
+            <children>
+                <Label layoutX="246.0" layoutY="117.0" text="Nhập thông tin tìm kiếm :" />
+                <TextField layoutX="401.0" layoutY="113.0" />
+                <Button layoutX="587.0" layoutY="160.0" mnemonicParsing="false" text="Thêm khách" />
+                <Button layoutX="686.0" layoutY="160.0" mnemonicParsing="false" text="Chỉnh sửa" />
+                <Button layoutX="774.0" layoutY="160.0" mnemonicParsing="false" text="Xóa" />
+                <Button layoutX="595.0" layoutY="113.0" mnemonicParsing="false" text="Tìm kiếm" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="11.0" layoutY="87.0" prefHeight="200.0" prefWidth="883.0">
+            <children>
+                <TableView fx:id="quanLyKH_Table" layoutX="131.0" layoutY="23.0" prefHeight="200.0" prefWidth="883.2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="stt_KH_Column" prefWidth="43.20001411437988" text="STT" />
+                        <TableColumn fx:id="tenKH_Column" prefWidth="196.80001068115234" text="Tên khách hàng" />
+                        <TableColumn fx:id="maKH_Column" prefWidth="108.800048828125" text="Mã khách hàng" />
+                        <TableColumn fx:id="sdt_KH_Column" prefWidth="109.60003662109375" text="Số điện thoại" />
+                        <TableColumn fx:id="diaChi_Column" prefWidth="249.60000610351562" text="Địa chỉ" />
+                        <TableColumn fx:id="debt_Column" prefWidth="152.800048828125" text="Còn nợ" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
