@@ -7,34 +7,33 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="quanLyHH_Anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#setQuanLyHH_Anchor" prefHeight="773.0" prefWidth="1535.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_i.HangHoa.quanLyHH_Controller">
+<AnchorPane fx:id="quanLyHH_Anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="773.0" prefWidth="1535.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_i.HangHoa.quanLyHH_Controller">
    <children>
       <AnchorPane layoutY="10.0" prefHeight="633.0" prefWidth="1535.0">
          <children>
-            <TableView fx:id="quanLyHH_Table" layoutX="10.0" onKeyPressed="#setQuanLyHH_Anchor" onMouseClicked="#getSelected" prefHeight="634.0" prefWidth="1500.0">
+            <TableView fx:id="quanLyHH_Table" layoutX="10.0" prefHeight="634.0" prefWidth="1500.0">
                <columns>
-                  <TableColumn fx:id="phanLoai_Col" prefWidth="200.0" text="Nhóm sản phẩm" />
-                  <TableColumn fx:id="tenHang_Col" prefWidth="300.0" text="Tên hàng" />
-                  <TableColumn fx:id="maHang_Col" minWidth="0.0" prefWidth="200.0" text="Mã hàng" />
+                  <TableColumn fx:id="stt_HH_Col" prefWidth="37.599976539611816" text="STT" />
+                  <TableColumn fx:id="phanLoai_Col" prefWidth="170.39999771118164" text="Nhóm sản phẩm" />
+                  <TableColumn fx:id="tenHang_Col" prefWidth="342.40000915527344" text="Tên hàng" />
+                  <TableColumn fx:id="maHang_Col" minWidth="0.0" prefWidth="225.60003662109375" text="Mã hàng" visible="false" />
                   <TableColumn fx:id="donViTinh_Col" prefWidth="150.0" text="Đơn vị tính" />
-                  <TableColumn fx:id="giaNhap_Col" prefWidth="150.0" text="Giá nhập" />
-                  <TableColumn fx:id="giaXuat_Col" prefWidth="150.0" text="Giá bán buôn" />
-                  <TableColumn fx:id="giaBanLe_Col" prefWidth="150.0" text="Giá bán lẻ" />
-                  <TableColumn fx:id="tonKho_Col" prefWidth="177.5999755859375" text="Tồn kho" />
+                  <TableColumn fx:id="giaNhap_Col" prefWidth="164.0" text="Giá nhập" />
+                  <TableColumn fx:id="giaXuat_Col" prefWidth="163.2000732421875" text="Giá bán buôn" />
+                  <TableColumn fx:id="giaBanLe_Col" prefWidth="263.20001220703125" text="Giá bán lẻ" />
+                  <TableColumn fx:id="tonKho_Col" prefWidth="208.7999267578125" text="Tồn kho" />
                </columns>
             </TableView>
          </children>
       </AnchorPane>
       <AnchorPane layoutY="633.0" prefHeight="90.0" prefWidth="1535.0">
          <children>
-            <TextField fx:id="timKiem_TextField" layoutX="1170.0" layoutY="55.0" onAction="#setTimKiem_TextField" prefWidth="350.0" />
-            <Button fx:id="suaHH_Button" layoutX="196.0" layoutY="100.0" mnemonicParsing="false" onAction="#setSuaHH_Button" prefHeight="25.0" prefWidth="130.0" text="Chỉnh sửa (F6)" />
-            <Button layoutX="368.0" layoutY="100.0" mnemonicParsing="false" onAction="#setXoaHH_Button" prefHeight="25.0" prefWidth="130.0" text="Xóa (F9)" fx:id="xoaHH_Button" />
-            <Button fx:id="themHH_Button" layoutX="34.0" layoutY="100.0" mnemonicParsing="false" onAction="#setThemHH_Button" prefHeight="25.0" prefWidth="130.0" text="Thêm hàng hóa (F5)" />
-            <Label layoutX="1069.0" layoutY="59.0" text="Tìm theo tên :" />
-            <Label layoutX="41.0" layoutY="55.0" text="Tìm theo nhóm sản phẩm :" />
-            <TextField layoutX="218.0" layoutY="51.0" prefWidth="200.0" />
-            <Button fx:id="thoat_Button" layoutX="1308.0" layoutY="100.0" mnemonicParsing="false" onAction="#setThoat_Button" prefHeight="25.0" prefWidth="130.0" text="Thoát (F12)" />
+            <TextField fx:id="timKiem_TextField" layoutX="100.0" layoutY="55.0" prefWidth="350.0" />
+            <Button fx:id="suaHH_Button" layoutX="196.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Chỉnh sửa (F6)" />
+            <Button layoutX="368.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Xóa (F9)" fx:id="xoaHH_Button" />
+            <Button fx:id="themHH_Button" layoutX="34.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Thêm hàng hóa (F5)" />
+            <Label layoutX="10.0" layoutY="59.0" text="Tìm theo tên :" />
+            <Button fx:id="thoat_Button" layoutX="1308.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Thoát (F12)" />
          </children>
       </AnchorPane>
    </children>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="thuChiAU_AnchorPane" prefHeight="220.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_i.TrangChu.thuChiAU_Controller">
+   <children>
+      <Label layoutX="40.0" layoutY="50.0" text="Phân loại:" />
+      <Label layoutX="40.0" layoutY="100.0" text="Nội dung:" />
+      <Button fx:id="them_Button" disable="true" layoutX="40.0" layoutY="160.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Thêm mới (F5)" />
+      <Button fx:id="ghi_Button" layoutX="200.0" layoutY="160.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Ghi (F5)" />
+      <Button fx:id="thoat_Button" layoutX="390.0" layoutY="160.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="120.0" text="Thoát (F12)" />
+      <ComboBox fx:id="loai_ComboBox" editable="true" layoutX="150.0" layoutY="50.0" prefWidth="150.0" promptText="--Thu Chi--" />
+      <TextField fx:id="noiDung_TexField" layoutX="150.0" layoutY="100.0" prefWidth="360.0" />
+   </children>
+</AnchorPane>

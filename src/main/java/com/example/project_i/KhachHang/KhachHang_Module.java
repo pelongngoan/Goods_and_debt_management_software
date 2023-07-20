@@ -1,28 +1,33 @@
 package com.example.project_i.KhachHang;
 
+import org.w3c.dom.Node;
+
 public class KhachHang_Module {
-    public Integer maKH;
-    public String tenKh;
-    public String diaChi;
-    public String sdt;
-    public String maSoThue;
-    public String diaChiMail;
+    private Integer maKH;
+    private String tenKH;
+    private String khuVuc;
+    private String diaChi;
+    private String nguoiDaiDien;
+    private String sdt;
+    private String mst;
+    private String tk;
+    private String nganHang;
+    private Double noDau;
 
     public KhachHang_Module() {
     }
 
-    public KhachHang_Module(Integer maKH, String tenKh, String diaChi, String sdt, String maSoThue, String diaChiMail) {
+    public KhachHang_Module(Integer maKH, String tenKH, String khuVuc, String diaChi, String nguoiDaiDien, String sdt, String mst, String tk, String nganHang, Double noDau) {
         this.maKH = maKH;
-        this.tenKh = tenKh;
+        this.tenKH = tenKH;
+        this.khuVuc = khuVuc;
         this.diaChi = diaChi;
+        this.nguoiDaiDien = nguoiDaiDien;
         this.sdt = sdt;
-        this.maSoThue = maSoThue;
-        this.diaChiMail = diaChiMail;
-    }
-
-    public KhachHang_Module(Integer maKH, String tenKh) {
-        this.maKH = maKH;
-        this.tenKh = tenKh;
+        this.mst = mst;
+        this.tk = tk;
+        this.nganHang = nganHang;
+        this.noDau = noDau;
     }
 
     public Integer getMaKH() {
@@ -33,12 +38,20 @@ public class KhachHang_Module {
         this.maKH = maKH;
     }
 
-    public String getTenKh() {
-        return tenKh;
+    public String getTenKH() {
+        return tenKH;
     }
 
-    public void setTenKh(String tenKh) {
-        this.tenKh = tenKh;
+    public void setTenKH(String tenKH) {
+        this.tenKH = tenKH;
+    }
+
+    public String getKhuVuc() {
+        return khuVuc;
+    }
+
+    public void setKhuVuc(String khuVuc) {
+        this.khuVuc = khuVuc;
     }
 
     public String getDiaChi() {
@@ -49,6 +62,14 @@ public class KhachHang_Module {
         this.diaChi = diaChi;
     }
 
+    public String getNguoiDaiDien() {
+        return nguoiDaiDien;
+    }
+
+    public void setNguoiDaiDien(String nguoiDaiDien) {
+        this.nguoiDaiDien = nguoiDaiDien;
+    }
+
     public String getSdt() {
         return sdt;
     }
@@ -57,19 +78,35 @@ public class KhachHang_Module {
         this.sdt = sdt;
     }
 
-    public String getMaSoThue() {
-        return maSoThue;
+    public String getMst() {
+        return mst;
     }
 
-    public void setMaSoThue(String maSoThue) {
-        this.maSoThue = maSoThue;
+    public void setMst(String mst) {
+        this.mst = mst;
     }
 
-    public String getDiaChiMail() {
-        return diaChiMail;
+    public String getTk() {
+        return tk;
     }
 
-    public void setDiaChiMail(String diaChiMail) {
-        this.diaChiMail = diaChiMail;
+    public void setTk(String tk) {
+        this.tk = tk;
+    }
+
+    public String getNganHang() {
+        return nganHang;
+    }
+
+    public void setNganHang(String nganHang) {
+        this.nganHang = nganHang;
+    }
+
+    public Double getNoDau() {
+        return noDau;
+    }
+
+    public void setNoDau(Double noDau) {
+        this.noDau = noDau;
     }
 }

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="quanLyNCC_AnchorPane" prefHeight="773.0" prefWidth="1535.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_i.KhachHang.NhaCungCap_Controller">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="650.0" prefWidth="1535.0">
+         <children>
+            <TableView fx:id="quanLyNCC_Table" layoutX="131.0" layoutY="23.0" prefHeight="650.4" prefWidth="1850.4" stylesheets="@../Phieu_Nhap_Xuat/test.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="Mã" />
+                  <TableColumn fx:id="maNCC_Column" prefWidth="69.60000324249268" text="ID" />
+                  <TableColumn fx:id="tenNCC_Column" prefWidth="236.8000030517578" text="Tên" />
+                  <TableColumn fx:id="khuVuc_Column" prefWidth="116.00006103515625" text="Khu vực" />
+                  <TableColumn fx:id="diaChi_Column" prefWidth="300.0" text="Địa chỉ" />
+                  <TableColumn fx:id="noDau_Column" prefWidth="156.79998779296875" text="Số nợ đầu" />
+                  <TableColumn fx:id="nguoiDD_Column" prefWidth="160.0" text="Người đại diện" />
+                  <TableColumn fx:id="sdt_Column" prefWidth="160.0" text="Điện thoại" />
+                  <TableColumn fx:id="nganHang_Column" prefWidth="200.7999267578125" text="Ngân hàng" />
+                  <TableColumn fx:id="tk_Column" prefWidth="146.4000244140625" text="Tài khoản" />
+                  <TableColumn fx:id="mst_Column" prefWidth="172.0" text="MST" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="672.0" prefHeight="64.0" prefWidth="1515.0">
+         <children>
+            <Label layoutX="10.0" layoutY="30.0" text="Tìm kiếm theo khu vực : " />
+            <TextField fx:id="timKiem_TextField" layoutX="650.0" layoutY="30.0" onKeyTyped="#setTimKiem_TextField" prefWidth="300.0" />
+            <Button fx:id="them_Button" layoutX="100.0" layoutY="70.0" mnemonicParsing="false" onAction="#setThem_Button" prefHeight="25.0" prefWidth="130.0" text="Thêm (F5)" />
+            <Button fx:id="sua_Button" layoutX="300.0" layoutY="70.0" mnemonicParsing="false" onAction="#setSua_Button" prefHeight="25.0" prefWidth="130.0" text="Sửa (F6)" />
+            <Button layoutX="500.0" layoutY="70.0" mnemonicParsing="false" onAction="#setXoa_Button" prefHeight="25.0" prefWidth="130.0" text="Xóa (F9)" fx:id="xoa_Button" />
+            <Button fx:id="thoat_Button" layoutX="1300.0" layoutY="70.0" mnemonicParsing="false" onAction="#setThoat_Button" prefHeight="25.0" prefWidth="130.0" text="Thoát (F12)" />
+            <Label layoutX="500.0" layoutY="30.0" text="Tìm kiếm theo tên : " />
+            <ComboBox fx:id="khuVuc_ComboBox" editable="true" layoutX="150.0" layoutY="30.0" prefHeight="25.0" prefWidth="300.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

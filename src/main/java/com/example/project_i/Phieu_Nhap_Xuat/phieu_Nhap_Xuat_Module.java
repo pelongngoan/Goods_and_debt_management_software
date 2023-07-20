@@ -1,21 +1,30 @@
 package com.example.project_i.Phieu_Nhap_Xuat;
 
-import com.example.project_i.HangHoa.HangHoa_Module;
-
 import java.time.LocalDate;
 
-public class phieu_Nhap_Xuat_Module extends HangHoa_Module {
+public class phieu_Nhap_Xuat_Module{
     public Integer maPhieu;
     public LocalDate ngayPS;
-    public Integer maKH;
+    public String maKH;
+    public String loai;
+
+    public String getLoai() {
+        return loai;
+    }
+
+    public void setLoai(String loai) {
+        this.loai = loai;
+    }
 
     public phieu_Nhap_Xuat_Module() {
     }
 
-    public phieu_Nhap_Xuat_Module(Integer maHang, String tenHang, String donViTinh, Double giaNhap) {
-        super(maHang,tenHang,donViTinh,giaNhap);
-
+    public phieu_Nhap_Xuat_Module(String loai, LocalDate ngayPS, String maKH) {
+        this.loai = loai;
+        this.ngayPS = ngayPS;
+        this.maKH = maKH;
     }
+
 
     public Integer getMaPhieu() {
         return maPhieu;
@@ -33,11 +42,11 @@ public class phieu_Nhap_Xuat_Module extends HangHoa_Module {
         this.ngayPS = ngayPS;
     }
 
-    public Integer getMaKH() {
+    public String getMaKH() {
         return maKH;
     }
 
-    public void setMaKH(Integer maKH) {
+    public void setMaKH(String maKH) {
         this.maKH = maKH;
     }
 }

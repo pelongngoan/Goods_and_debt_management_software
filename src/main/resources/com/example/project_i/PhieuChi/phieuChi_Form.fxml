@@ -1,39 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.project_i.PhieuChi.phieuChi_Controller"
-            prefHeight="400.0" prefWidth="600.0">
-    <children>
-        <AnchorPane layoutX="26.0" layoutY="11.0" prefHeight="389.0" prefWidth="866.0">
-            <children>
-                <Label layoutX="307.0" layoutY="14.0" text="NHẬP PHIẾU CHI">
-                    <font>
-                        <Font name="Times New Roman Bold" size="33.0" />
-                    </font>
-                </Label>
-                <Label layoutX="31.0" layoutY="85.0" text="Ngày phát sinh :" />
-                <Label layoutX="29.0" layoutY="120.0" text="Tên người nhận :" />
-                <Label layoutX="14.0" layoutY="161.0" text="Số tiền thanh toán :" />
-                <DatePicker layoutX="140.0" layoutY="81.0" />
-                <TextField layoutX="140.0" layoutY="117.0" />
-                <TextField layoutX="141.0" layoutY="157.0" />
-                <Label layoutX="18.0" layoutY="205.0" text="Khoản chi :" />
-                <ChoiceBox layoutX="141.0" layoutY="210.0" prefWidth="150.0" />
-            </children>
-        </AnchorPane>
-        <AnchorPane layoutX="44.0" layoutY="413.0" prefHeight="136.0" prefWidth="838.0">
-            <children>
-                <Button layoutX="469.0" layoutY="44.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="90.0" text="Lưu phiếu chi" />
-                <Button layoutX="618.0" layoutY="44.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="111.0" text="Xuất phiếu chi" />
-            </children>
-        </AnchorPane>
-    </children>
+
+<AnchorPane fx:id="phieuThu_Pane" prefHeight="650.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_i.PhieuChi.phieuChi_Controller">
+   <children>
+      <AnchorPane prefHeight="550.0" prefWidth="750.0">
+         <children>
+            <Label alignment="CENTER" layoutY="7.0" prefHeight="26.0" prefWidth="750.0" text="VIẾT PHIẾU CHI">
+               <font>
+                  <Font name="Times New Roman Bold" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="150.0" text="Ngày phát sinh :" />
+            <Label layoutX="40.0" layoutY="195.0" text="Nội dung thu chi :" />
+            <Label layoutX="40.0" layoutY="240.0" text="Người nhận (nộp) :" />
+            <DatePicker fx:id="ngayPS_Date" disable="true" layoutX="150.0" layoutY="150.0" prefWidth="200.0" AnchorPane.topAnchor="150.0" />
+            <TextField fx:id="mst_TextField" disable="true" layoutX="500.0" layoutY="326.0" prefWidth="200.0" />
+            <Button fx:id="tao_Button" layoutX="40.0" layoutY="60.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Tạo phiếu (F5)" />
+            <ComboBox fx:id="noiDung_ComboBox" disable="true" editable="true" layoutX="150.0" layoutY="195.0" prefWidth="300.0" />
+            <Label layoutX="40.0" layoutY="285.0" text="Địa chỉ :" />
+            <Label layoutX="40.0" layoutY="330.0" text="Điện thoại :" />
+            <Label layoutX="400.0" layoutY="330.0" text="MST :" />
+            <Label layoutX="40.0" layoutY="375.0" text="Số TK :" />
+            <Label layoutX="400.0" layoutY="375.0" text="Ngân hàng :" />
+            <Label layoutX="40.0" layoutY="420.0" text="Số tiền :" />
+            <TextField fx:id="nguoiDD_TextField" disable="true" layoutX="151.0" layoutY="240.0" prefWidth="550.0" />
+            <TextField fx:id="diaChi_TextField" disable="true" layoutX="151.0" layoutY="285.0" prefWidth="550.0" />
+            <TextField fx:id="sdt_TextField" disable="true" layoutX="151.0" layoutY="330.0" prefWidth="200.0" />
+            <TextField fx:id="tk_TextField" disable="true" layoutX="151.0" layoutY="375.0" prefWidth="200.0" />
+            <TextField fx:id="nganHang_TextField" disable="true" layoutX="500.0" layoutY="375.0" prefHeight="26.0" prefWidth="200.0" />
+            <Line endX="710.0" layoutY="50.0" startX="40.0" />
+            <TextField fx:id="soPhieu_TextField" editable="false" layoutX="500.0" layoutY="75.0" prefWidth="150.0" />
+            <Label layoutX="425.0" layoutY="75.0" text="Số phiếu :" />
+            <TextField fx:id="soTien_TextField" disable="true" layoutX="150.0" layoutY="420.0" prefWidth="300.0" />
+            <TableView fx:id="table_TableView" layoutX="150.0" layoutY="266.0" prefHeight="160.0" prefWidth="550.0" visible="false">
+               <columns>
+                  <TableColumn fx:id="id_Column" prefWidth="75.0" text="id" visible="false" />
+                  <TableColumn fx:id="ten_Column" prefWidth="110.40003967285156" text="Tên" />
+                  <TableColumn fx:id="diaChi_Column" prefWidth="106.4000244140625" text="Địa Chỉ" />
+                  <TableColumn fx:id="noDau_Column" prefWidth="117.5999755859375" text="Còn nợ" />
+                  <TableColumn fx:id="nguoiDD_Column" prefWidth="115.20001220703125" text="Người đại diện" />
+                  <TableColumn fx:id="sdt_Column" prefWidth="99.199951171875" text="SĐT" />
+                  <TableColumn fx:id="mst_Column" prefWidth="75.0" text="MST" />
+                  <TableColumn fx:id="nganHang_Column" prefWidth="75.0" text="Ngân Hàng" />
+                  <TableColumn fx:id="tk_Column" prefWidth="75.0" text="Tài khoản" />
+               </columns>
+            </TableView>
+            <Button fx:id="tao_Button1" disable="true" layoutX="40.0" layoutY="60.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Tạo phiếu (F5)" visible="false" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="550.0" prefHeight="100.0" prefWidth="750.0">
+         <children>
+            <Button fx:id="luu_Button" disable="true" layoutX="15.0" layoutY="15.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Lưu phiếu thu (F9)" />
+            <Button fx:id="huy_Button" disable="true" layoutX="185.0" layoutY="15.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Hủy phiếu (F8)" />
+            <Button fx:id="thoat_Button" layoutX="585.0" layoutY="15.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Thoát (F12)" />
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>

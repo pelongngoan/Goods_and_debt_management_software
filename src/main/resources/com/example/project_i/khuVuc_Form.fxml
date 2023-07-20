@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="khuVuc_AnchorPane" prefHeight="773.0" prefWidth="1535.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_i.quanLyKV_Controller">
+   <children>
+      <AnchorPane prefHeight="644.0" prefWidth="1535.0">
+         <children>
+            <TableView fx:id="khuVuc_Table" editable="true" onKeyTyped="#setTimKiem_TextField" prefHeight="600.0" prefWidth="1535.0" stylesheets="@Phieu_Nhap_Xuat/test.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="id_Column" prefWidth="75.0" text="id" visible="false" />
+                <TableColumn fx:id="ten_Column" prefWidth="1459.2" text="Tên khu vực" />
+              </columns>
+            </TableView>
+         </children>
+
+      </AnchorPane>
+      <AnchorPane layoutY="664.0" prefHeight="81.0" prefWidth="1535.0">
+         <children>
+            <Button layoutX="10.0" layoutY="30.0" mnemonicParsing="false" onAction="#setXoa_Button" prefHeight="25.0" prefWidth="150.0" text="Xóa (F9)" fx:id="xoa_Button" />
+            <Label layoutX="250.0" layoutY="30.0" text="Tìm kiếm theo tên :" />
+            <TextField fx:id="timKiem_TextField" layoutX="400.0" layoutY="30.0" onKeyTyped="#setTimKiem_TextField" prefHeight="25.0" prefWidth="250.0" />
+            <Button fx:id="thoat_Button" layoutX="1300.0" layoutY="30.0" mnemonicParsing="false" onAction="#setThoat_Button" prefHeight="25.0" prefWidth="150.0" text="Thoát (F12)" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

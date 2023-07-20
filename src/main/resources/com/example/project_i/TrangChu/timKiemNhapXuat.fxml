@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="timKiem_AnchorPane" prefHeight="733.0" prefWidth="1535.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_i.TrangChu.timKiemNhapXuat_Controller">
+   <children>
+      <Label alignment="CENTER" layoutY="10.0" prefWidth="1535.0" text="TÌM KIẾM HÓA ĐƠN NHẬP XUẤT" textFill="#113f84">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="loaiHD_CheckBox" layoutX="50.0" layoutY="70.0" mnemonicParsing="false" text="Loại hóa đơn :" />
+      <CheckBox fx:id="timTatCa_CheckBox" layoutX="700.0" layoutY="70.0" mnemonicParsing="false" text="Tìm kiếm tất cả" />
+      <CheckBox fx:id="ngayPS_CheckBox" layoutX="50.0" layoutY="120.0" mnemonicParsing="false" text="Lập từ ngày:" />
+      <DatePicker fx:id="tuNgay_DatePicker" layoutX="150.0" layoutY="120.0" prefWidth="180.0" />
+      <DatePicker fx:id="denNgay_DatePicker" layoutX="470.0" layoutY="120.0" prefWidth="180.0" />
+      <Label layoutX="370.0" layoutY="120.0" text="Đến ngày :" />
+      <ComboBox fx:id="loaiHD_ComboBox" editable="true" layoutX="150.0" layoutY="66.0" prefWidth="500.0" />
+      <CheckBox fx:id="maHD_CheckBox" layoutX="50.0" layoutY="170.0" mnemonicParsing="false" text="Mã hóa đơn:" />
+      <CheckBox fx:id="tenKH_CheckBox" layoutX="700.0" layoutY="170.0" mnemonicParsing="false" text="Tên khách hàng" />
+      <TextField fx:id="maHD_TextField" layoutX="150.0" layoutY="170.0" prefWidth="500.0" />
+      <TextField fx:id="tenKH_TextField" layoutX="850.0" layoutY="170.0" prefWidth="500.0" />
+      <Button fx:id="timKiem_Button" layoutX="1200.0" layoutY="100.0" mnemonicParsing="false" prefWidth="150.0" text="Tìm kiếm (F7)" />
+      <TableView fx:id="phieu_Table" layoutX="50.0" layoutY="250.0" prefHeight="400.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="ngayPS_Column" prefWidth="134.3999900817871" text="Ngày phát sinh" />
+          <TableColumn fx:id="soPhieu_Column" prefWidth="131.2000274658203" text="Số phiếu" />
+            <TableColumn fx:id="tenKhach_Column" prefWidth="336.0" text="Tên khách hàng" />
+        </columns>
+      </TableView>
+      <TableView fx:id="ctPhieu_Table" layoutX="660.0" layoutY="250.0" prefHeight="400.0" prefWidth="850.0">
+        <columns>
+          <TableColumn fx:id="stt_Column" prefWidth="75.0" text="STT" />
+          <TableColumn fx:id="tenSP_Column" prefWidth="269.60003662109375" text="Tên sản phẩm" />
+            <TableColumn fx:id="soLuong_Column" prefWidth="128.00006103515625" text="Số lượng" />
+            <TableColumn fx:id="donGia_Column" prefWidth="196.0" text="Đơn giá" />
+            <TableColumn fx:id="thanhTien_Column" prefWidth="183.199951171875" text="Thành Tiền" />
+        </columns>
+      </TableView>
+      <Button fx:id="thoat_Button" layoutX="1300.0" layoutY="680.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="Thoát (F12)" />
+   </children>
+</AnchorPane>

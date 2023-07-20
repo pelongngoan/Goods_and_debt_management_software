@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="quanLyTC_AnchorPane" prefHeight="773.0" prefWidth="1535.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_i.TrangChu.ThuChi_Controller">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="650.0" prefWidth="1535.0">
+         <children>
+            <TableView fx:id="quanLyTC_Table" layoutX="131.0" layoutY="23.0" prefHeight="650.4" prefWidth="1850.4" stylesheets="@../Phieu_Nhap_Xuat/test.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="id_Column" prefWidth="75.0" text="id" />
+                  <TableColumn fx:id="loai_Column" prefWidth="179.19997882843018" text="Loại Thu Chi" />
+                  <TableColumn fx:id="noiDung_Column" prefWidth="1355.2" text="Nội dung thu chi" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="672.0" prefHeight="64.0" prefWidth="1515.0">
+         <children>
+            <TextField fx:id="timKiem_TextField" layoutX="250.0" layoutY="30.0" prefWidth="300.0" />
+            <Button fx:id="them_Button" layoutX="100.0" layoutY="70.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Thêm (F5)" />
+            <Button fx:id="sua_Button" layoutX="300.0" layoutY="70.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Sửa (F6)" />
+            <Button layoutX="500.0" layoutY="70.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Xóa (F9)" fx:id="xoa_Button" />
+            <Button fx:id="thoat_Button" layoutX="1300.0" layoutY="70.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Thoát (F12)" />
+            <Label layoutX="50.0" layoutY="30.0" text="Tìm kiếm theo nội dung : " />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

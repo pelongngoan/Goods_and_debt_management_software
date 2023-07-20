@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="themKH_Form" prefHeight="482.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_i.KhachHang.KhachHang_add_Controller">
+   <children>
+      <Label layoutX="50.0" layoutY="95.0" text="Tên (*) :" />
+      <Label cacheShape="false" centerShape="false" focusTraversable="false" layoutX="55.0" layoutY="84.0" text="Mã sản phẩm :" visible="false" />
+      <Label layoutX="50.0" layoutY="245.0" text="Mã số thuế :" />
+      <Label layoutX="50.0" layoutY="195.0" text="SĐT :" />
+      <Label layoutX="400.0" layoutY="195.0" text="Người đại diện :" />
+      <Button fx:id="themMoi_Button" disable="true" layoutX="30.0" layoutY="442.0" mnemonicParsing="false" onAction="#setThemMoi_Button" prefHeight="25.0" prefWidth="130.0" text="Thêm mới (F5)" />
+      <Button fx:id="thoat_Button" layoutX="500.0" layoutY="442.0" mnemonicParsing="false" onAction="#setThoat_Button" prefHeight="25.0" prefWidth="130.0" text="Thoát (F12)" />
+      <TextField fx:id="ten_TextField" layoutX="150.0" layoutY="95.0" prefHeight="26.0" prefWidth="550.0" />
+      <TextField fx:id="diaChi_TextField" layoutX="150.0" layoutY="145.0" prefHeight="26.0" prefWidth="550.0" />
+      <TextField fx:id="mst_TextField" layoutX="150.0" layoutY="245.0" prefHeight="26.0" prefWidth="200.0" />
+      <TextField fx:id="sdt_TextField" layoutX="150.0" layoutY="195.0" prefHeight="26.0" prefWidth="200.0" />
+      <TextField fx:id="nguoiDD_TextField" layoutX="500.0" layoutY="195.0" prefHeight="26.0" prefWidth="200.0" />
+      <Label alignment="BASELINE_CENTER" layoutY="10.0" prefWidth="750.0" text="NHẬP THÔNG TIN KHÁCH HÀNG">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="ghi_Button" layoutX="180.0" layoutY="442.0" mnemonicParsing="false" onAction="#setGhi_Button" prefHeight="25.0" prefWidth="130.0" text="Ghi (F8)" />
+      <Label layoutX="50.0" layoutY="145.0" text="Địa chỉ (*) :" />
+      <Line endX="750.0" layoutY="426.0" />
+      <Label layoutX="51.0" layoutY="45.0" text="Khu vực [F3] (*) :" />
+      <Label layoutX="400.0" layoutY="245.0" text="Tài khoản :" />
+      <Label layoutX="50.0" layoutY="295.0" text="Ngân hàng :" />
+      <Label layoutX="50.0" layoutY="345.0" text="Số nợ đầu :" />
+      <TextField fx:id="nganHang_TextField" layoutX="150.0" layoutY="295.0" prefHeight="26.0" prefWidth="550.0" />
+      <TextField fx:id="noDau_TextField" layoutX="150.0" layoutY="345.0" prefHeight="26.0" prefWidth="550.0" />
+      <TextField fx:id="tk_TextField" layoutX="500.0" layoutY="245.0" prefHeight="26.0" prefWidth="200.0" />
+      <Label layoutX="450.0" layoutY="50.0" text="Mã (*) :" />
+      <TextField fx:id="ma_TextField" editable="false" layoutX="500.0" layoutY="45.0" mouseTransparent="true" pickOnBounds="false" prefWidth="200.0" />
+      <ComboBox fx:id="khuVuc_ComboBox" editable="true" layoutX="150.0" layoutY="45.0" prefWidth="200.0" promptText="-- Khu vực -- " />
+   </children>
+</AnchorPane>

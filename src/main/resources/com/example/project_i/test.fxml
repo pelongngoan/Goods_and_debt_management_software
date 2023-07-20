@@ -2,10 +2,74 @@
 
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="1535.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="148.0" layoutY="111.0" text="Tesy" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="20.0" prefWidth="1535.0" text="CHÀO MỪNG BẠN ĐẾN VỚI PHẦN MỀM QUẢN LÝ HÀNG HÓA VÀ CÔNG NỢ" textFill="#403dd1">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="70.0" text="Phần mềm này được tạo ra nhằm giúp các chủ quản lý có thể quản lý tốt các sản phẩm hàng hóa của mình cũng như nhà cung cấp và khách hàng,">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="95.0" text=" thêm vào đó phần mềm cũng giúp nhân viên có thể dễ dàng hơn trong việc nhập xuất hóa đơn cũng như báo cáo tổng cho kế toán">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="150.0" text="B. Danh mục quản lý:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="390.0" text="C. Quản lý chứng từ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="700.0" layoutY="150.0" text="D. Báo cáo tổng hợp">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="700.0" layoutY="390.0" text="F. Tìm kiếm">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Text layoutX="70.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Giúp nhà quản lý cũng như nhân viên thuận tiện hơn trong việc :" />
+      <Text layoutX="70.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Tạo phiếu thu tiền. " />
+      <Text layoutX="70.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Tạo phiếu thu chi." />
+      <Text layoutX="70.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Xuất hàng bán lẻ." />
+      <Text layoutX="70.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.  Xuất hàng bán buôn cho khách hàng." />
+      <Text layoutX="70.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.  Nhập hàng từ nhà cung cấp." />
+      <Text layoutX="70.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Giúp nhà quản lý theo dõi nắm rõ được:" />
+      <Text layoutX="70.0" layoutY="560.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Thông tin số lượng của các sản phẩm trong cửa hàng của mình." />
+      <Text layoutX="70.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Nội dung những việc cần thu chi cho cửa hàng." />
+      <Text layoutX="70.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Thông tin về khách hàng mà cửa hàng mình cung cấp hàng cho." />
+      <Text layoutX="70.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Thông tin về nhà cung cấp hàng cho doanh nghiệp." />
+      <Text layoutX="70.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Khu vực quản lý." />
+      <Text layoutX="730.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Giúp nhà quản lý thấy rõ được:" />
+      <Text layoutX="730.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Tổng hợp số lượng hàng hóa đã nhập và xuất trong từng khoảng thời gian cũng như tồn kho" />
+      <Text layoutX="730.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.  Tổng tiền của khách hàng khi xuất" />
+      <Text layoutX="730.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.  Tổng nợ của cửa hàng với nhà cung cấp khi nhập hàng" />
+      <Text layoutX="730.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kế toán quản lý dễ dàng:" />
+      <Text layoutX="730.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.  Chi tiết các hóa đơn xuất nhập và bán lẻ" />
+      <Text layoutX="730.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.  Chi tiết cũng như danh sách các phiếu thu chi" />
+      <Label layoutX="694.0" layoutY="575.0" text="Các phím tắt:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Text layoutX="730.0" layoutY="621.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F5 : Tạo mới ( thêm mới )" />
+      <Text layoutX="729.0" layoutY="657.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F6 : Chỉnh sửa ( thay đổi )" />
+      <Text layoutX="988.0" layoutY="621.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F9 : Xóa ( loại bỏ )" />
+      <Text layoutX="988.0" layoutY="657.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F12 : Thoát trang" />
    </children>
 </AnchorPane>

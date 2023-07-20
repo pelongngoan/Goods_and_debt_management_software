@@ -5,11 +5,7 @@ module com.example.project_i {
     requires java.sql;
     requires java.naming;
     requires java.desktop;
-
-
     requires org.controlsfx.controls;
-
-
     opens com.example.project_i to javafx.fxml;
     exports com.example.project_i;
 

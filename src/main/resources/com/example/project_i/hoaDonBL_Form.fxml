@@ -1,57 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.project_i.HoaDonBanLe.hoaDonBL_Controller"
-            prefHeight="400.0" prefWidth="600.0">
-    <children>
-        <AnchorPane layoutX="8.0" layoutY="5.0" prefHeight="282.0" prefWidth="884.0">
-            <children>
-                <TextField layoutX="135.0" layoutY="185.0" />
-                <TextField layoutX="135.0" layoutY="228.0" />
-                <DatePicker layoutX="135.0" layoutY="141.0" />
-                <Button layoutX="318.0" layoutY="228.0" mnemonicParsing="false" text="Nhập" />
-                <Label layoutX="24.0" layoutY="189.0" text="Người mua :" />
-                <Label layoutX="16.0" layoutY="145.0" text="Ngày phát sinh :" />
-                <Label layoutX="21.0" layoutY="232.0" text="Mã hàng hóa :" />
-                <Button layoutX="756.0" layoutY="31.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="83.0" text="Tạo hóa đơn" />
-                <Label layoutX="128.0" layoutY="14.0" text="NHẬP HÓA ĐƠN BÁN LẺ">
-                    <font>
-                        <Font name="Times New Roman Bold" size="47.0" />
-                    </font>
-                </Label>
-            </children>
-        </AnchorPane>
-        <AnchorPane layoutX="6.0" layoutY="286.0" prefHeight="200.0" prefWidth="200.0">
-            <children>
-                <TableView prefHeight="174.0" prefWidth="887.0">
-                    <columns>
-                        <TableColumn prefWidth="56.80001735687256" text="STT" />
-                        <TableColumn prefWidth="227.20004272460938" text="Tên hàng" />
-                        <TableColumn minWidth="0.0" prefWidth="112.7999267578125" text="Đơn vị tính" />
-                        <TableColumn prefWidth="140.79998779296875" text="Số lượng" />
-                        <TableColumn prefWidth="170.4000244140625" text="Đơn giá" />
-                        <TableColumn prefWidth="193.60009765625" text="Thành tiền" />
-                    </columns>
-                </TableView>
-            </children>
-        </AnchorPane>
-        <AnchorPane layoutX="4.0" layoutY="469.0" prefHeight="102.0" prefWidth="889.0">
-            <children>
-                <Label layoutX="689.0" layoutY="14.0" text="Tổng tiền :" />
-                <Label layoutX="109.0" layoutY="62.0" text="Khách trả :" />
-                <TextField layoutX="182.0" layoutY="57.0" />
-                <Label layoutX="360.0" layoutY="61.0" text="Trả lại :" />
-                <Button layoutX="549.0" layoutY="50.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="127.0" text="Lưu hóa đơn" />
-                <Button layoutX="733.0" layoutY="51.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="105.0" text="Xuất hóa đơn" />
-            </children>
-        </AnchorPane>
-    </children>
+
+<AnchorPane fx:id="phieuNhap_Pane" prefHeight="765.0" prefWidth="1535.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_i.Phieu_Nhap_Xuat.hoaDonBanLe_Controller">
+   <children>
+      <AnchorPane prefHeight="158.0" prefWidth="1535.0">
+         <children>
+            <Label layoutX="173.0" layoutY="50.0" text="Ngày :" />
+            <Label layoutX="30.0" layoutY="92.0" text="Tên khách hàng:" />
+            <Button fx:id="taoPhieu_Button" layoutX="30.0" layoutY="46.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Tạo phiếu nhập (F5)" />
+            <Label layoutX="1230.0" layoutY="50.0" text="Số phiếu nhập :" />
+            <TextField fx:id="tenNhaCungCap_TextField" disable="true" editable="false" layoutX="156.0" layoutY="87.0" prefHeight="26.0" prefWidth="1099.0" promptText="Khách bán lẻ" AnchorPane.rightAnchor="279.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="soPhieu_TextField" editable="false" layoutX="1336.0" layoutY="46.0" />
+            <DatePicker fx:id="ngayPS_Field" disable="true" layoutX="217.0" layoutY="46.0" prefHeight="25.0" prefWidth="130.0" />
+            <Pane prefHeight="39.0" prefWidth="1535.0" style="-fx-background-color: #ebd9a9;">
+               <children>
+                  <Label alignment="BASELINE_CENTER" prefHeight="39.0" prefWidth="1535.0" text="NHẬP XUẤT HÓA ĐƠN BÁN LẺ " textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="taoPhieu_Button1" disable="true" layoutX="30.0" layoutY="46.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Tạo phiếu nhập (F5) FAKE" visible="false" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="600.0" prefHeight="158.0" prefWidth="1500.0">
+         <children>
+            <Button fx:id="luuPhieu_Button" disable="true" layoutX="30.0" layoutY="118.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Lưu phiếu nhập" />
+            <Label layoutX="10.0" layoutY="14.0" text="Tổng tiền sản phẩm :" />
+            <Button fx:id="huy_Button" disable="true" layoutX="173.0" layoutY="118.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Hủy phiếu" />
+            <Button fx:id="suaPhieu_Button" disable="true" layoutX="325.0" layoutY="118.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Chỉnh sửa" />
+            <Label layoutX="10.0" layoutY="44.0" text="Tổng tiền sau VAT :" />
+            <Label layoutX="10.0" layoutY="74.0" text="Số tiền cần thanh toán :" />
+            <TextField fx:id="tongTienTT_TextField" alignment="CENTER_RIGHT" disable="true" editable="false" layoutX="145.0" layoutY="10.0" prefHeight="25.0" prefWidth="150.0" style="-fx-text-fill: #46a0e0;">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tongTienSauVAT_TextField" alignment="CENTER_RIGHT" disable="true" editable="false" layoutX="145.0" layoutY="40.0" prefHeight="25.0" prefWidth="150.0" style="-fx-text-fill: #8a133d;">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="soTienCanTT_TextField" alignment="CENTER_RIGHT" disable="true" editable="false" layoutX="145.0" layoutY="70.0" prefHeight="25.0" prefWidth="150.0" style="-fx-text-fill: #f0523a;">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="303.0" layoutY="14.0" text="VNĐ" />
+            <Label layoutX="303.0" layoutY="44.0" text="VNĐ" />
+            <Label layoutX="303.0" layoutY="74.0" text="VNĐ" />
+            <Label layoutX="342.0" layoutY="14.0" text="Thuế VAT (%) :" />
+            <Label fx:id="thanhToanNgay_Label" accessibleRole="BUTTON" layoutX="342.0" layoutY="74.0" stylesheets="@Phieu_Nhap_Xuat/label.css" text="Thanh toán ngay :" />
+            <TextField fx:id="thanhToanNgay_TextField" alignment="CENTER_RIGHT" disable="true" layoutX="443.0" layoutY="70.0" prefHeight="25.0" prefWidth="150.0" style="-fx-text-fill: #f0523a;">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tongTienVAT_TextField" alignment="CENTER_RIGHT" disable="true" editable="false" layoutX="443.0" layoutY="40.0" prefHeight="26.0" prefWidth="150.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </TextField>
+            <TextArea fx:id="ghiChu_TextArea" disable="true" layoutX="750.0" layoutY="10.0" prefHeight="95.0" prefWidth="740.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="650.0" layoutY="10.0" text="Ghi chú :" />
+            <Label layoutX="601.0" layoutY="74.0" text="VNĐ" />
+            <ComboBox fx:id="VAT_ComboBox" disable="true" editable="true" layoutX="443.0" layoutY="9.0" prefHeight="26.0" prefWidth="89.0" />
+            <Button fx:id="thoat_Button" disable="true" layoutX="1333.0" layoutY="118.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Thoát (F12)" />
+            <Label layoutX="342.0" layoutY="44.0" text="Tổng tiền VAT:" />
+            <Label layoutX="601.0" layoutY="44.0" text="VNĐ" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="164.0" prefHeight="424.0" prefWidth="1480.0">
+         <children>
+            <TableView fx:id="phieuNhap_Table" disable="true" editable="true" layoutY="-101.0" prefHeight="382.4" prefWidth="1480.0" stylesheets="@Phieu_Nhap_Xuat/test.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="stt_Column" prefWidth="39.19997978210449" text="STT" />
+                  <TableColumn fx:id="id_Column" prefWidth="39.19997978210449" text="ID" visible="false" />
+                  <TableColumn fx:id="maHang_Column" prefWidth="68.80001831054688" text="Mã hàng" visible="false" />
+                  <TableColumn fx:id="tenHang_Column" prefWidth="331.1999969482422" text="Tên hàng" />
+                  <TableColumn fx:id="donViTinh_Column" prefWidth="148.7999267578125" text="Đơn vị tính" />
+                  <TableColumn fx:id="soLuong_Column" prefWidth="162.4000244140625" text="Số lượng" />
+                  <TableColumn fx:id="gia_Column" prefWidth="195.2000732421875" text="Đơn giá" />
+                  <TableColumn fx:id="thanhTien_Column" prefWidth="286.4000244140625" text="Thành tiền" />
+                  <TableColumn fx:id="ghiChu" prefWidth="317.5999755859375" text="Ghi chú" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
